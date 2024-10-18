@@ -25,7 +25,9 @@ Survey: Survey Papers, Method Papers, Dataset, Code
 ### [PDE](#content)
 
 #### Advection Equation
-The advection equation, also known as the transport equation, describes the change of a physical quantity as it is transported by a fluid flow. Its general form is:
+The advection equation, also known as the transport equation, describes the change of a physical quantity as it is transported by a fluid flow. The advection equation is widely used in fields such as **atmospheric science** to model the transport of temperature, humidity, and pollutants; **oceanography** to describe the movement of salinity and temperature; **environmental science** to simulate the dispersion of pollutants in air and water; and **engineering** to analyze the transport of heat and substances within fluids.
+
+Its general form is:
 
 $$
 \frac{\partial \phi}{\partial t}+ \mathbf{v} \cdot \nabla \phi=0
@@ -52,6 +54,8 @@ $$
 $$
 
 where $u$, $v$, and $w$ are the fluid velocities in the $x$, $y$, and $z$ directions, respectively.
+
+
 
 #### Burger Equation
 
