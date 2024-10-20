@@ -190,7 +190,9 @@ $$
 
 <a id="heat"></a>
 #### Heat Equation
-The heat equation describes how heat (or temperature) diffuses through a given region over time. Its general form is:
+The heat equation describes how heat (or temperature) diffuses through a given region over time. The heat equation is widely used to model heat conduction in **materials**, analyze thermal performance in **electronics**, predict temperature changes in **natural environments**, and understand temperature distributions in **medical imaging**.
+
+Its general form is:
 
 $$
 \frac{\partial u}{\partial t} = \alpha \Delta u
@@ -216,6 +218,6 @@ $$
 \frac{\partial u}{\partial t}=\alpha\left(\frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2}+\frac{\partial^2 u}{\partial z^2}\right)
 $$
 
-The heat equation is widely used to model heat conduction in materials, analyze thermal performance in electronics, predict temperature changes in natural environments, and understand temperature distributions in medical imaging.
+
  
 
