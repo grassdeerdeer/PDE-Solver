@@ -41,6 +41,10 @@ Survey: Survey Papers, Method Papers, Dataset, Code
     <td>&ensp;<a href="#poisson">Poisson Equation</a></td>
     <td>&ensp;</td>
 </tr>
+<tr>
+    <td>&ensp;<a href="#heat">Heat Equation</a></td>
+    <td>&ensp;</td>
+</tr>
 </table>
 
 
@@ -183,5 +187,35 @@ $$
 \Delta p = 0
 $$
 
+
+<a id="heat"></a>
+#### Heat Equation
+The heat equation describes how heat (or temperature) diffuses through a given region over time. Its general form is:
+
+$$
+\frac{\partial u}{\partial t} = \alpha \Delta u
+$$
+
+where $u$ is the temperature, $\alpha$ is the thermal diffusivity of the material, defined as $\alpha = \frac{k}{\rho c}$ where $k$ is the thermal conductivity, $\rho$ is the density, and $c$ is the specific heat capacity.
+
+1-D:
+
+$$
+\frac{\partial u}{\partial t}=\alpha\left(\frac{\partial^2 u}{\partial x^2}\right)
+$$
+
+2-D:
+
+$$
+\frac{\partial u}{\partial t}=\alpha\left(\frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2}\right)
+$$
+
+3-D:
+
+$$
+\frac{\partial u}{\partial t}=\alpha\left(\frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2}+\frac{\partial^2 u}{\partial z^2}\right)
+$$
+
+The heat equation is widely used to model heat conduction in materials, analyze thermal performance in electronics, predict temperature changes in natural environments, and understand temperature distributions in medical imaging.
  
 
