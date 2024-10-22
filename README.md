@@ -224,7 +224,20 @@ $$
 
 <a id="navier-stokes"></a>
 #### [Navier-Stokes Equations](#pde)
-The Navier-Stokes equations describe the motion of fluid substances such as liquids and gases. Solving these equations primarily aims to determine the velocity field and pressure field of the fluid at different positions and times.
+The Navier-Stokes equations describe the motion of fluid substances such as liquids and gases. Solving these equations primarily aims to determine the velocity field and pressure field of the fluid at different positions and times. The Navier-Stokes equations represent the **conservation of momentum**. These equations are always solved together with the **continuity equation**, which represents the conservation of mass.
+
+The general form of the **incompressible Navier-Stokes** equations is: 
+
+$$
+\begin{gathered}
+\frac{\partial \mathbf{u}}{\partial t}+(\mathbf{u} \cdot \nabla) \mathbf{u} = -\frac{1}{\rho} \nabla p+\nu \nabla^2 \mathbf{u}+\mathbf{f}\\
+\nabla \cdot \mathbf{u} = 0 \quad (continuity \quad equation)
+\end{gathered}
+$$
+
+where $\mathbf{u}$ is the velocity field, $t$ is time, $\rho$ is the fluid density, $p$ is the pressure, $\nu$ is the kinematic viscosity, $\mathbf{f}$ represents external forces (e.g., gravity).
+
+The general form of the **compressible Navier-Stokes** equations is:
 
 
 
