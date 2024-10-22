@@ -237,18 +237,43 @@ $$
 
 where $\mathbf{u}$ is the velocity field, $t$ is time, $\rho$ is the fluid density, $p$ is the pressure, $\nu$ is the kinematic viscosity, $\mathbf{f}$ represents external forces (e.g., gravity).
 
-For compressible fluids, the density $\rho$ can vary with time and space. The general form of the **compressible Navier-Stokes** equations is:
-
+3-D:
 $$
 \begin{aligned}
-&\frac{\partial \rho}{\partial t}+\nabla \cdot(\rho u)=0  \\
-&\text { ation): }\\
+&\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}+\frac{\partial w}{\partial z}=0\\
 &\begin{gathered}
-\frac{\partial(\rho u)}{\partial t}+\nabla \cdot(\rho u \otimes u)=-\nabla p+\nabla \cdot \tau+\rho f \\
-\frac{\partial(\rho E)}{\partial t}+\nabla \cdot(\rho E u)=-\nabla \cdot(p u)+\nabla \cdot(\tau \cdot u)+\nabla \cdot(\kappa \nabla T)+\rho f \cdot u
+\frac{\partial u}{\partial t}+u \frac{\partial u}{\partial x}+v \frac{\partial u}{\partial y}+w \frac{\partial u}{\partial z}=-\frac{1}{\rho} \frac{\partial p}{\partial x}+v\left(\frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2}+\frac{\partial^2 u}{\partial z^2}\right) \\
+\frac{\partial v}{\partial t}+u \frac{\partial v}{\partial x}+v \frac{\partial v}{\partial y}+w \frac{\partial v}{\partial z}=-\frac{1}{\rho} \frac{\partial p}{\partial y}+v\left(\frac{\partial^2 v}{\partial x^2}+\frac{\partial^2 v}{\partial y^2}+\frac{\partial^2 v}{\partial z^2}\right) \\
+\frac{\partial w}{\partial t}+u \frac{\partial w}{\partial x}+v \frac{\partial w}{\partial y}+w \frac{\partial w}{\partial z}=-\frac{1}{\rho} \frac{\partial p}{\partial z}+v\left(\frac{\partial^2 w}{\partial x^2}+\frac{\partial^2 w}{\partial y^2}+\frac{\partial^2 w}{\partial z^2}\right)
 \end{gathered}
 \end{aligned}
 $$
+
+where:
+
+( u ) is the velocity,
+( x ) is the spatial coordinate,
+( t ) is time,
+( \rho ) is the fluid density,
+( p ) is the pressure,
+( \nu ) is the kinematic viscosity.
+
+---
+
+
+
+For compressible fluids, the density $\rho$ can vary with time and space. The Compressible Navier-Stokes include an additional energy equation to account for changes in internal energy and temperature. The general form of the **compressible Navier-Stokes** equations is:
+
+$$
+\begin{gathered}
+\frac{\partial(\rho \mathbf{u})}{\partial t}+\nabla \cdot(\rho \mathbf{u} \otimes \mathbf{u})=-\nabla p+\nabla \cdot \tau+\rho f \\
+\frac{\partial \rho}{\partial t}+\nabla \cdot(\rho \mathbf{u})=0  \quad (\text{Continuity Equation, mass conservation})\\
+\frac{\partial(\rho E)}{\partial t}+\nabla \cdot(\rho E \mathbf{u})=-\nabla \cdot(p \mathbf{u})+\nabla \cdot(\tau \cdot \mathbf{u})+\nabla \cdot(\kappa \nabla T)+\rho f \cdot \mathbf{u} \quad (\text{Energy Equation, energy conservation})
+\end{gathered}
+$$
+
+where $\mathbf{u}$ is the velocity field, $p$ is the pressure, $\nu$ is the kinematic viscosity, $\mathbf{f}$ represents external forces, $\mathbf{\tau}$ is the stress tensor. $E$ is the total energy per unit mass, $\kappa$ is the thermal conductivity, $T$ is the temperature.
+
 
 
 
