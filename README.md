@@ -231,13 +231,24 @@ The general form of the **incompressible Navier-Stokes** equations is:
 $$
 \begin{gathered}
 \frac{\partial \mathbf{u}}{\partial t}+(\mathbf{u} \cdot \nabla) \mathbf{u} = -\frac{1}{\rho} \nabla p+\nu \nabla^2 \mathbf{u}+\mathbf{f}\\
-\nabla \cdot \mathbf{u} = 0 \quad (continuity \quad equation)
+\nabla \cdot \mathbf{u} = 0 \quad (\text{continuity equation})
 \end{gathered}
 $$
 
 where $\mathbf{u}$ is the velocity field, $t$ is time, $\rho$ is the fluid density, $p$ is the pressure, $\nu$ is the kinematic viscosity, $\mathbf{f}$ represents external forces (e.g., gravity).
 
-The general form of the **compressible Navier-Stokes** equations is:
+For compressible fluids, the density $\rho$ can vary with time and space. The general form of the **compressible Navier-Stokes** equations is:
+
+$$
+\begin{aligned}
+&\frac{\partial \rho}{\partial t}+\nabla \cdot(\rho u)=0  \\
+&\text { ation): }\\
+&\begin{gathered}
+\frac{\partial(\rho u)}{\partial t}+\nabla \cdot(\rho u \otimes u)=-\nabla p+\nabla \cdot \tau+\rho f \\
+\frac{\partial(\rho E)}{\partial t}+\nabla \cdot(\rho E u)=-\nabla \cdot(p u)+\nabla \cdot(\tau \cdot u)+\nabla \cdot(\kappa \nabla T)+\rho f \cdot u
+\end{gathered}
+\end{aligned}
+$$
 
 
 
