@@ -286,8 +286,21 @@ $$
 \end{gathered}
 $$
 
-where $\mathbf{u}$ is the velocity field, $p$ is the pressure, $\nu$ is the kinematic viscosity, $\mathbf{f}$ represents external forces, $\mathbf{\tau}$ is the stress tensor. $E$ is the total energy per unit mass, $\kappa$ is the thermal conductivity, $T$ is the temperature.
+where $\mathbf{u}$ is the velocity field, $p$ is the pressure, $\nu$ is the kinematic viscosity, $\mathbf{f}$ represents external forces, $\mathbf{\tau}$ is the viscous stress tensor. $E$ is the total energy per unit mass, $\kappa$ is the thermal conductivity, $T$ is the temperature.
 
+* The viscous stress tensor $\mathbf{\tau}$ for a compressible Newtonian fluid is given by:
+
+$$
+\tau=\mu\left(\nabla \mathbf{u}+(\nabla \mathbf{u})^T\right)+\lambda(\nabla \cdot \mathbf{u}) \mathbf{I}
+$$
+
+where $mu$ is the dynamic viscosity, $\lambda$ is the second viscosity coefficient, and $\mathbf{I}$ is the identity matrix.
+
+* The viscous stress tensor $\mathbf{\tau}$ for ideal compressible fluid is zero because ideal fluids are assumed to have no viscosity.
+
+$$
+\tau = 0
+$$
 
 
 
