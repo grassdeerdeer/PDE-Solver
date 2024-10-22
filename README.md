@@ -312,12 +312,12 @@ $$
 3-D:
 
 $$
-\begin{aligned}
-& \frac{\partial(\rho u)}{\partial t}+\frac{\partial\left(\rho u^2\right)}{\partial x}+\frac{\partial(\rho u v)}{\partial y}+\frac{\partial(\rho u w)}{\partial z}=-\frac{\partial p}{\partial x}+\frac{\partial \tau_{x x}}{\partial x}+\frac{\partial \tau_{x y}}{\partial y}+\frac{\partial \tau_{x z}}{\partial z}+\rho f_x \\
-& \frac{\partial(\rho v)}{\partial t}+\frac{\partial(\rho u v)}{\partial x}+\frac{\partial\left(\rho v^2\right)}{\partial y}+\frac{\partial(\rho v w)}{\partial z}=-\frac{\partial p}{\partial y}+\frac{\partial \tau_{y x}}{\partial x}+\frac{\partial \tau_{y y}}{\partial y}+\frac{\partial \tau_{y z}}{\partial z}+\rho f_y \\
-& \frac{\partial(\rho w)}{\partial t}+\frac{\partial(\rho u w)}{\partial x}+\frac{\partial(\rho v w)}{\partial y}+\frac{\partial\left(\rho w^2\right)}{\partial z}=-\frac{\partial p}{\partial z}+\frac{\partial \tau_{z x}}{\partial x}+\frac{\partial \tau_{z y}}{\partial y}+\frac{\partial \tau_{z z}}{\partial z}+\rho f_z \\
+\begin{gathered}
+ \frac{\partial(\rho u)}{\partial t}+\frac{\partial\left(\rho u^2\right)}{\partial x}+\frac{\partial(\rho u v)}{\partial y}+\frac{\partial(\rho u w)}{\partial z}=-\frac{\partial p}{\partial x}+\frac{\partial \tau_{x x}}{\partial x}+\frac{\partial \tau_{x y}}{\partial y}+\frac{\partial \tau_{x z}}{\partial z}+\rho f_x \\
+ \frac{\partial(\rho v)}{\partial t}+\frac{\partial(\rho u v)}{\partial x}+\frac{\partial\left(\rho v^2\right)}{\partial y}+\frac{\partial(\rho v w)}{\partial z}=-\frac{\partial p}{\partial y}+\frac{\partial \tau_{y x}}{\partial x}+\frac{\partial \tau_{y y}}{\partial y}+\frac{\partial \tau_{y z}}{\partial z}+\rho f_y \\
+ \frac{\partial(\rho w)}{\partial t}+\frac{\partial(\rho u w)}{\partial x}+\frac{\partial(\rho v w)}{\partial y}+\frac{\partial\left(\rho w^2\right)}{\partial z}=-\frac{\partial p}{\partial z}+\frac{\partial \tau_{z x}}{\partial x}+\frac{\partial \tau_{z y}}{\partial y}+\frac{\partial \tau_{z z}}{\partial z}+\rho f_z \\
 \frac{\partial \rho}{\partial t}+\frac{\partial(\rho u)}{E x}+\frac{\partial(\rho v)}{\partial y}+\frac{\partial(\rho w)}{\partial z}=0 \text(Continuity Equation)
-\end{aligned}
+\end{gathered}
 $$
 
 
