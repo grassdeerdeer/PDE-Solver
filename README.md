@@ -55,7 +55,7 @@ Survey: Survey Papers, Method Papers, Dataset, Code
 </tr>
 <tr>
     <td>&ensp;<a href="#diffusion-reaction">Diffusion-Reaction Equation</a></td>
-    <td>&ensp;Models the behavior of chemical substances undergoing diffusion and reaction processes </td>
+    <td>&ensp;Models the concentration of chemical substance undergoing diffusion and reaction processes </td>
 </tr>
 </table>
 
