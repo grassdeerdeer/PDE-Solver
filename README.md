@@ -364,5 +364,32 @@ $$
 <a id="wave"></a>
 #### [Wave Equation](#pde)
 
+The wave equation describes the propagation of waves, such as sound waves, light waves, and water waves. 
+
+Its general form is:
+
+$$
+\frac{\partial^2 u}{\partial t^2}=c^2 \nabla^2 u
+$$
+
+where $u = u(x_1, x_2, \ldots, x_n, t)$ is the wave function, $t$ is time, $\nabla^2$ is the Laplacian operator, $c$ is the speed of wave propagation.
+
+1-D:
+
+$$
+\frac{\partial^2 u}{\partial t^2}=c^2 \frac{\partial^2 u}{\partial x^2}
+$$
+
+2-D:
+
+$$
+\frac{\partial^2 u}{\partial t^2}=c^2 (\frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2})
+$$
+
+3-D:
+
+$$
+\frac{\partial^2 u}{\partial t^2}=c^2 (\frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2}+\frac{\partial^2 u}{\partial z^2})
+$$
 
 
