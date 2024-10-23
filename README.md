@@ -53,7 +53,12 @@ Survey: Survey Papers, Method Papers, Dataset, Code
     <td>&ensp;<a href="#wave">Wave Equation</a></td>
     <td>&ensp;Propagation of waves </td>
 </tr>
+<tr>
+    <td>&ensp;<a href="#diffusion-reaction">Diffusion-Reaction Equation</a></td>
+    <td>&ensp;Models the behavior of chemical substances undergoing diffusion and reaction processes </td>
+</tr>
 </table>
+
 
 
 <a id="advection"></a>
@@ -391,5 +396,42 @@ $$
 $$
 \frac{\partial^2 u}{\partial t^2}=c^2 (\frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2}+\frac{\partial^2 u}{\partial z^2})
 $$
+
+<a id="diffusion-reaction"></a>
+#### [Diffusion-Reaction Equation](#pde)
+
+The diffusion-reaction equation models the behavior of chemical substances undergoing diffusion and reaction processes. 
+
+Its general form is:
+
+$$
+\frac{\partial u}{\partial t}=D \nabla^2 u+R(u)
+$$
+
+where where: $u = u(x_1, x_2, \ldots, x_n, t)$ is the concentration of the substance, $t$ is time, $D$ is the diffusion coefficient, $\nabla^2$ is the Laplacian operator,
+$R(u)$ is the reaction term, which can be a function of $u$.
+
+1-D:
+
+$$
+\frac{\partial u}{\partial t}=D \frac{\partial^2 u}{\partial x^2}+R(u)
+$$
+
+2-D:
+
+$$
+\frac{\partial u}{\partial t}=D (\frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2})+R(u)
+$$
+
+3-D:
+
+$$
+\frac{\partial u}{\partial t}=D (\frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2}+\frac{\partial^2 u}{\partial z^2})+R(u)
+$$
+
+
+
+
+
 
 
