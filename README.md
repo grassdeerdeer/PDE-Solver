@@ -433,5 +433,8 @@ $$
 
 
 
-
+#### [Diffusion-Sorption Equation](#pde)
+#### [Darcy flow](#pde)
+#### [Shallow-Water](#pde)
+#### [Kuramoto-Sivashinsky Equation](#pde)
 
