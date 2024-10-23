@@ -288,6 +288,8 @@ $$
 
 where $\mathbf{u}$ is the velocity field, $p$ is the pressure, $\nu$ is the kinematic viscosity, $\mathbf{f}$ represents external forces, $\mathbf{\tau}$ is the viscous stress tensor. $E$ is the total energy per unit mass, $\kappa$ is the thermal conductivity, $T$ is the temperature.
 
+
+
 * The viscous stress tensor $\mathbf{\tau}$ for a compressible Newtonian fluid is given by:
 
 $$
@@ -312,19 +314,21 @@ $$
 3-D:
 
 $$
+\mathbf{\tau}=\left(\begin{array}{ccc}
+\tau_{x x} & \tau_{x y} & \tau_{x z} \\
+\tau_{y x} & \tau_{y y} & \tau_{y z} \\
+\tau_{z x} & \tau_{z y} & \tau_{z z}
+\end{array}\right)
+$$
+
+$$
 \begin{gathered}
  \frac{\partial(\rho u)}{\partial t}+\frac{\partial\left(\rho u^2\right)}{\partial x}+\frac{\partial(\rho u v)}{\partial y}+\frac{\partial(\rho u w)}{\partial z}=-\frac{\partial p}{\partial x}+\frac{\partial \tau_{x x}}{\partial x}+\frac{\partial \tau_{x y}}{\partial y}+\frac{\partial \tau_{x z}}{\partial z}+\rho f_x \\
  \frac{\partial(\rho v)}{\partial t}+\frac{\partial(\rho u v)}{\partial x}+\frac{\partial\left(\rho v^2\right)}{\partial y}+\frac{\partial(\rho v w)}{\partial z}=-\frac{\partial p}{\partial y}+\frac{\partial \tau_{y x}}{\partial x}+\frac{\partial \tau_{y y}}{\partial y}+\frac{\partial \tau_{y z}}{\partial z}+\rho f_y \\
  \frac{\partial(\rho w)}{\partial t}+\frac{\partial(\rho u w)}{\partial x}+\frac{\partial(\rho v w)}{\partial y}+\frac{\partial\left(\rho w^2\right)}{\partial z}=-\frac{\partial p}{\partial z}+\frac{\partial \tau_{z x}}{\partial x}+\frac{\partial \tau_{z y}}{\partial y}+\frac{\partial \tau_{z z}}{\partial z}+\rho f_z \\
-\frac{\partial \rho}{\partial t}+\frac{\partial(\rho u)}{E x}+\frac{\partial(\rho v)}{\partial y}+\frac{\partial(\rho w)}{\partial z}=0 \text(Continuity Equation)
+\frac{\partial \rho}{\partial t}+\frac{\partial(\rho u)}{E x}+\frac{\partial(\rho v)}{\partial y}+\frac{\partial(\rho w)}{\partial z}=0 \text(Continuity Equation)\\
+ \frac{\partial(\rho E)}{\partial t}+\frac{\partial(\rho u E)}{\partial x}+\frac{\partial(\rho v E)}{\partial y}+\frac{\partial(\rho w E)}{\partial z}=-\frac{\partial(p u)}{\partial x}-\frac{\partial(p v)}{\partial y}-\frac{\partial(p w)}{\partial z}+\frac{\partial\left(u \tau_{x x}+v \tau_{y x}+w \tau_{z x}\right)}{\partial x}+\frac{\partial\left(u \tau_{x y}+v \tau_{y y}+w \tau_{z y}\right)}{\partial y}+\frac{\partial\left(u \tau_{x z}+v \tau_{y z}+w \tau_{z z}\right)}{\partial z}+\frac{\partial}{\partial x}\left(\kappa \frac{\partial T}{\partial x}\right)+\frac{\partial}{\partial y}\left(\kappa \frac{\partial T}{\partial y}\right)+\frac{\partial}{\partial z}\left(\kappa \frac{\partial T}{\partial z}\right)+ \rho(uf_x+vf_y+wf_z) \text(Energy Equation)
 \end{gathered}
-$$
-
-
-Energy Equation:
-
-$$
-+\frac{\partial(\rho w E)}{\partial z}=-\frac{\partial(p u)}{\partial x}-\frac{\partial(p v)}{\partial y}-\frac{\partial(p w)}{\partial z}+\frac{\partial\left(u \tau_{x x}+v \tau_{y x}+w \tau_{z x}\right)}{\partial x}+\frac{\partial\left(u \tau_{x y}+v \tau_{y y}+w \tau_{z y}\right)}{\partial y}+\frac{\partial\left(u \tau_{x z}+v \tau_{y z}+w \tau_{z z}\right)}{\partial z}+\frac{\partial}{\partial x}\left(k \frac{\partial T}{\partial x}\right)+\frac{\partial}{\partial y}\left(k \frac{\partial T}{\partial y}\right)+\frac{\partial}{\partial z}\left(k \frac{\partial T}{\partial z}\right)+p(
 $$
 
 
