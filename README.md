@@ -226,7 +226,7 @@ $$
 #### [Navier-Stokes Equations](#pde)
 The Navier-Stokes equations describe the motion of fluid substances such as liquids and gases. Solving these equations primarily aims to determine the velocity field and pressure field of the fluid at different positions and times. The Navier-Stokes equations represent the **conservation of momentum**. These equations are always solved together with the **continuity equation**, which represents the conservation of mass.
 
-The general form of the **incompressible Navier-Stokes** equations is: 
+The incompressible Navier-Stokes Equations are typically used for low-speed flows where changes in fluid density are negligible, such as in water, blood and oil. The general form of the **incompressible Navier-Stokes** equations is: 
 
 $$
 \begin{gathered}
@@ -275,8 +275,7 @@ where $u$, $v$, and $w$ are the velocities in the $x$, $y$, and $z$ directions, 
 ---
 
 
-
-For compressible fluids, the density $\rho$ can vary with time and space. The Compressible Navier-Stokes include an additional energy equation to account for changes in internal energy and temperature. The general form of the **compressible Navier-Stokes** equations is:
+The Compressible Navier-Stokes Equations are used for high-speed flows where the density $\rho$ can vary with time and space, such as in aerodynamics and combustion processes. The Compressible Navier-Stokes include an additional energy equation to account for changes in internal energy and temperature. The general form of the **compressible Navier-Stokes** equations is:
 
 $$
 \begin{gathered}
@@ -286,7 +285,7 @@ $$
 \end{gathered}
 $$
 
-where $\mathbf{u}$ is the velocity field, $p$ is the pressure, $\nu$ is the kinematic viscosity, $\mathbf{f}$ represents external forces, $\mathbf{\tau}$ is the viscous stress tensor. $E$ is the total energy per unit mass, $\kappa$ is the thermal conductivity, $T$ is the temperature.
+where $\mathbf{u}$ is the velocity field, $p$ is the pressure, $\nu$ is the kinematic viscosity, $\mathbf{f}$ represents external forces, $\mathbf{\tau}$ is the viscous stress tensor. $E$ is the total energy per unit mass, $\kappa$ is the thermal conductivity, $T$ is the temperature. The different terms correspond to the inertial forces ($\frac{\partial(\rho \mathbf{u})}{\partial t}+\nabla \cdot(\rho \mathbf{u} \otimes \mathbf{u})$), pressure forces ($-\nabla p$), viscous forces ($\tau$), and the external forces applied to the fluid($\rho f$). 
 
 
 
@@ -357,6 +356,7 @@ $$
 $$
  \frac{\partial(\rho E)}{\partial t}+\frac{\partial(\rho u E)}{\partial x}+\frac{\partial(\rho v E)}{\partial y}+\frac{\partial(\rho w E)}{\partial z}=-\frac{\partial(p u)}{\partial x}-\frac{\partial(p v)}{\partial y}-\frac{\partial(p w)}{\partial z}+\frac{\partial\left(u \tau_{x x}+v \tau_{y x}+w \tau_{z x}\right)}{\partial x}+\frac{\partial\left(u \tau_{x y}+v \tau_{y y}+w \tau_{z y}\right)}{\partial y}+\frac{\partial\left(u \tau_{x z}+v \tau_{y z}+w \tau_{z z}\right)}{\partial z}+\frac{\partial}{\partial x}\left(\kappa \frac{\partial T}{\partial x}\right)+\frac{\partial}{\partial y}\left(\kappa \frac{\partial T}{\partial y}\right)+\frac{\partial}{\partial z}\left(\kappa \frac{\partial T}{\partial z}\right)+ \rho(uf_x+vf_y+wf_z) \text{(Energy Equation)}
 $$
+
 
 
 
