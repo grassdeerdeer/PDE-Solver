@@ -285,7 +285,7 @@ $$
 \end{gathered}
 $$
 
-where $\mathbf{u}$ is the velocity field, $p$ is the pressure, $\nu$ is the kinematic viscosity, $\mathbf{f}$ represents external forces, $\mathbf{\tau}$ is the viscous stress tensor. $E$ is the total energy per unit mass, $\kappa$ is the thermal conductivity, $T$ is the temperature. The different terms correspond to the inertial forces ($\frac{\partial(\rho \mathbf{u})}{\partial t}+\nabla \cdot(\rho \mathbf{u} \otimes \mathbf{u})$), pressure forces ($-\nabla p$), viscous forces ($\tau$), and the external forces applied to the fluid($\rho f$). 
+where $\mathbf{u}$ is the velocity field, $p$ is the pressure, $\nu$ is the kinematic viscosity, $\mathbf{f}$ represents external forces, $\mathbf{\tau}$ is the viscous stress tensor. $E$ is the total energy per unit mass, $\kappa$ is the thermal conductivity, $T$ is the temperature. The different terms correspond to the inertial forces, pressure forces ($-\nabla p$), viscous forces ($\tau$), and the external forces applied to the fluid($\rho f$). 
 
 
 
