@@ -31,7 +31,7 @@ Survey: Survey Papers, Method Papers, Dataset, Code
 </tr>
 <tr>
     <td>&ensp;<a href="#advection">Advection Equation</a></td>
-    <td>&ensp;</td>
+    <td>&ensp;transport physical quantity</td>
 </tr>
 <tr>
     <td>&ensp;<a href="#burger">Burgers Equation</a></td>
