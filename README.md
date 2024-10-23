@@ -35,7 +35,7 @@ Survey: Survey Papers, Method Papers, Dataset, Code
 </tr>
 <tr>
     <td>&ensp;<a href="#burger">Burgers Equation</a></td>
-    <td>&ensp;</td>
+    <td>&ensp; wave profiles </td>
 </tr>
 <tr>
     <td>&ensp;<a href="#poisson">Poisson Equation</a></td>
@@ -48,6 +48,10 @@ Survey: Survey Papers, Method Papers, Dataset, Code
 <tr>
     <td>&ensp;<a href="#navier-stokes">Navier-Stokes Equations</a></td>
     <td>&ensp;</td>
+</tr>
+<tr>
+    <td>&ensp;<a href="#wave">Wave Equation</a></td>
+    <td>&ensp; propagation of waves </td>
 </tr>
 </table>
 
@@ -357,6 +361,8 @@ $$
  \frac{\partial(\rho E)}{\partial t}+\frac{\partial(\rho u E)}{\partial x}+\frac{\partial(\rho v E)}{\partial y}+\frac{\partial(\rho w E)}{\partial z}=-\frac{\partial(p u)}{\partial x}-\frac{\partial(p v)}{\partial y}-\frac{\partial(p w)}{\partial z}+\frac{\partial\left(u \tau_{x x}+v \tau_{y x}+w \tau_{z x}\right)}{\partial x}+\frac{\partial\left(u \tau_{x y}+v \tau_{y y}+w \tau_{z y}\right)}{\partial y}+\frac{\partial\left(u \tau_{x z}+v \tau_{y z}+w \tau_{z z}\right)}{\partial z}+\frac{\partial}{\partial x}\left(\kappa \frac{\partial T}{\partial x}\right)+\frac{\partial}{\partial y}\left(\kappa \frac{\partial T}{\partial y}\right)+\frac{\partial}{\partial z}\left(\kappa \frac{\partial T}{\partial z}\right)+ \rho(uf_x+vf_y+wf_z) \text{(Energy Equation)}
 $$
 
+<a id="wave"></a>
+#### [Wave Equation](#pde)
 
 
 
