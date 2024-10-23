@@ -314,7 +314,7 @@ $$
 $$
 
 $$
- \frac{\partial(\rho E)}{\partial t}+\frac{\partial(\rho u E)}{\partial x}=-\frac{\partial(p u)}{\partial x}+\frac{\partial\left(u \tau_{x x}\right)}{\partial x}+\frac{\partial}{\partial x}\left(\kappa \frac{\partial T}{\partial x}\right)+ \rho(uf_x) \text{(Energy Equation)}
+ \frac{\partial(\rho E)}{\partial t}+\frac{\partial(\rho u E)}{\partial x}=-\frac{\partial(p u)}{\partial x}+\frac{\partial\left(u \tau_{x x}\right)}{\partial x}+\frac{\partial}{\partial x}\left(\kappa \frac{\partial T}{\partial x}\right)+ \rho uf_x \text{(Energy Equation)}
 $$
 
 
